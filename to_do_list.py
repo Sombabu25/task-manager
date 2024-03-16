@@ -15,7 +15,7 @@ def view_task():
     print("-----------------available tasks-----------------------")
     for x in tasks:
         print(x)
-    print("----------------------------------------")
+   
 
 # to delete task from the list
 def delete_task():
@@ -35,7 +35,8 @@ def pending_tasks():
 
 
 while True:
-    choice=input("choose an option:\n1.adding task\n2.view the task\n3.remove task\n4. Number of Remaining Tasks\n")
+    print("--------------------------options-------------------------------------------------")
+    choice=input("1.adding task\n2.view the task\n3.remove task\n4. Number of Remaining Tasks\n")
     if choice == "1":
         add_task()
     elif choice =="2":
@@ -46,5 +47,5 @@ while True:
         pending_tasks()
 
     else:
-        print("OOPS Invalid Choice\n")
+        print("Invalid Choice try again !!!\n")
         continue
